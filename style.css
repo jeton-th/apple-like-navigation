@@ -1,0 +1,146 @@
+html {
+    background: #fafafa;
+    font-family:  Roboto, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    overflow: hidden;
+    background: #333333;
+}   
+
+.main-nav {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav a {
+    display: block;
+    font-size: 14px;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.main-nav a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+
+.nav-links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .show .nav-links {
+        height: 100%;
+    }
+
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+        
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+   
+    .nav-icon {
+        order: 1;
+        display: grid;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    .search-icon {
+        order: 3;
+    }
+
+}
+
+.show .one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+
+.show .two {
+    transform: rotate(-45deg) translateY(-5.5px);
+}
+
+.content {
+    max-width: 1024px;
+    min-height: 380px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+    color: #111111;
+}
+
+@media (max-width: 960px){
+    .content h1 {
+        font-size: 48px;
+    }
+}
