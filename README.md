@@ -10,4 +10,4 @@ This is a beautiful, elegant, classy Apple-like responsive navigation.
 
 ## Live demo
 
-[Classy Apple-like responsive navigation.](https://github.com/jeton-th/apple-like-navigation)
+[Demo](https://jeton-th.github.io/apple-like-navigation/)
