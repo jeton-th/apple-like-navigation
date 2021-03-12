@@ -67,7 +67,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-
     .show {
         background-color: #000000;
     }
@@ -118,7 +117,6 @@ nav {
     .search-icon {
         order: 3;
     }
-
 }
 
 .show .one {
